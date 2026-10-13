@@ -1,0 +1,19 @@
+USE CollegeDB;
+
+ALTER TABLE Student
+ADD PRIMARY KEY (Student_ID);
+
+ALTER TABLE Student
+MODIFY Name VARCHAR(50) NOT NULL;
+
+ALTER TABLE Employee
+ADD Email VARCHAR(100) UNIQUE;
+
+ALTER TABLE Product
+ADD CONSTRAINT chk_product_price CHECK (Price > 0);
+
+ALTER TABLE Student
+ADD Email VARCHAR(100);
+
+ALTER TABLE Student
+ADD Phone VARCHAR(15);

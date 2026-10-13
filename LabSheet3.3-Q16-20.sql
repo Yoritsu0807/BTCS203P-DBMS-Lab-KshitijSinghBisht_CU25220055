@@ -1,0 +1,7 @@
+USE CollegeDB;
+
+SELECT CONVERT(123, CHAR) AS Number_As_Text;
+SELECT CAST('250' AS UNSIGNED) AS Text_As_Number;
+SELECT DATE_FORMAT('2026-10-14', '%d-%m-%Y') AS Formatted_Date;
+SELECT CAST('45.75' AS DECIMAL(10,2)) AS Converted_Number;
+SELECT CONVERT('2026-10-14', DATE) AS Converted_Date;
